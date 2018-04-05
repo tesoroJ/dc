@@ -1,0 +1,37 @@
+{% extends "jobs/templates/index.html" %}
+{% block content %}
+    <di>
+    <p class="text-center">{{ UPS }} {{ model }} 100-160kVA</p>
+    </di>
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>OEM Name</th>
+      <th>DC part name</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">DC caps</th>
+      <td>{{ OEM_DC }}</td>
+      <td>{{ DC_DC }}</td>
+      <td>{{ quantity }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Input caps</th>
+      <td>{{ OEM_In }}</td>
+      <td>{{ DC_IN }}</td>
+      <td>{{ In_q }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Output caps</th>
+      <td>{{ OEM_Out }}</td>
+      <td>{{ DC_Out }}</td>
+      <td>{{ Out_q }}</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

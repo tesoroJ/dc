@@ -1,0 +1,16 @@
+{% extends 'jobs/templates/index.html' %}
+
+
+{% block content %}
+    <div class="text-center">
+    {% for i in note %}
+    <p>{{ i.date }}</p>
+    <p>{{ i.fse }}</p>
+    <p>{{ i.ups }}</p>
+        <hr>
+    {% endfor %}
+    </div>
+
+
+
+{% endblock %}
